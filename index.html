@@ -3,106 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rudrapratap Rath | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>Rudrapratap Rath | Data Analyst & Data Scientist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Inter', sans-serif;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
     }
     body {
-      background: #f9fafb;
-      color: #111827;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #1f2937;
+      background: linear-gradient(to right, #2c3e50, #3498db);
       color: #fff;
       padding: 2rem;
+    }
+    h1, h2 {
       text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      font-weight: 300;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem 2rem;
-      background: white;
-      border-radius: 1rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-    section h2 {
-      font-size: 1.5rem;
       margin-bottom: 1rem;
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 0.5rem;
     }
-    ul {
-      list-style: none;
-      padding-left: 1rem;
+    .container {
+      max-width: 800px;
+      margin: auto;
     }
-    ul li::before {
-      content: "\2022";
-      color: #3b82f6;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em;
+    .accordion {
+      margin: 1rem 0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
-    .contact a {
-      display: inline-block;
-      margin-right: 1rem;
-      text-decoration: none;
-      color: #2563eb;
+    .accordion-item {
+      background-color: #34495e;
+      border-bottom: 1px solid #2c3e50;
     }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #6b7280;
+    .accordion-header {
+      padding: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      background: #1abc9c;
+      transition: background 0.3s ease;
+    }
+    .accordion-header:hover {
+      background: #16a085;
+    }
+    .accordion-content {
+      padding: 1rem;
+      display: none;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-10px);}
+      to {opacity: 1; transform: translateY(0);}
     }
   </style>
 </head>
 <body>
-  <header>
+  <div class="container">
     <h1>Rudrapratap Rath</h1>
-    <p>Aspiring Data Analyst & Sales Operations Specialist</p>
-  </header>
+    <h2>Data Analyst | Aspiring Data Scientist</h2>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I am a motivated professional with experience in data entry, clinical data management, and pharmaceutical research. Passionate about leveraging data-driven insights to support business decisions and improve healthcare processes. I am currently focused on mastering tools like Excel, Power BI, SQL, and SAS.</p>
-  </section>
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header">About Me</div>
+        <div class="accordion-content">
+          A data-driven enthusiast passionate about extracting insights from data to drive business decisions. With a foundation in pharmacy and a sharp analytical mindset, I bridge the gap between healthcare knowledge and modern data analysis. I am skilled in Python, Power BI, Excel, and SQL, with hands-on experience in interpreting data and storytelling.
+        </div>
+      </div>
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>Data Analysis & Visualization (Excel, Power BI)</li>
-      <li>SQL & Relational Databases</li>
-      <li>Clinical Data Management</li>
-      <li>Pharmacovigilance & Data Entry</li>
-      <li>Statistical Programming (SAS)</li>
-    </ul>
-  </section>
+      <div class="accordion-item">
+        <div class="accordion-header">Skills</div>
+        <div class="accordion-content">
+          <strong>Data Analysis & Visualization:</strong> Excel, Power BI, Tableau, SQL, Python<br>
+          <strong>Statistics & Mathematics:</strong> Hypothesis Testing, Probability, Linear Algebra<br>
+          <strong>Data Science & Machine Learning:</strong> scikit-learn, Pandas, NumPy, Matplotlib, Seaborn<br>
+          <strong>Tools & Tech:</strong> Jupyter Notebook, GitHub, VS Code<br>
+          <strong>Soft Skills:</strong> Problem Solving, Storytelling, Communication
+        </div>
+      </div>
 
-  <section>
-    <h2>Contact</h2>
-    <div class="contact">
-      <a href="https://github.com/rudraprataprath" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/rudraprataprath" target="_blank">LinkedIn</a>
-      <a href="mailto:rudrapratap@example.com">Email</a>
+      <div class="accordion-item">
+        <div class="accordion-header">Education</div>
+        <div class="accordion-content">
+          <strong>Bachelor of Pharmacy (B.Pharm)</strong><br>
+          Biju Patnaik University of Technology (BPUT)<br>
+          CGPA: 8.7 / 10
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">Certifications</div>
+        <div class="accordion-content">
+          - Data Analyst Career Essentials – LinkedIn Learning<br>
+          - Data Science Specialization – Coursera
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">Contact</div>
+        <div class="accordion-content">
+          📍 Cuttack, Odisha, India<br>
+          📧 rudraprataprath050@gmail.com<br>
+          📞 +91 7815025232<br>
+          🔗 <a href="https://www.linkedin.com/in/rudra-pratap-rath-45780123a" target="_blank" style="color: #ecf0f1;">LinkedIn Profile</a>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <footer>
-    &copy; 2025 Rudrapratap Rath. All rights reserved.
-  </footer>
+  <script>
+    const headers = document.querySelectorAll('.accordion-header');
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
 </body>
 </html>
